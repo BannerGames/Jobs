@@ -11,15 +11,15 @@ general:
     toplineseparator: '7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6Dias '
+      days: '&e%days% &6dias '
       hours: '&e%hours% &6horas '
-      mins: '&e%mins% &6min '
-      secs: '&e%secs% &6seg '
-    invalidPage: '&Pagina Invalida'
+      mins: '&e%mins% &6minutos '
+      secs: '&e%secs% &6segundos '
+    invalidPage: '&Página inválida'
     'true': '&2Verdadeiro'
     'false': '&cFalso'
   admin:
-    error: '&cHouve um erro no comando.'
+    error: '&cHouve um erro ao exectur o comando.'
     success: '&eSeu comando foi executado.'
   error:
     noHelpPage: '&cNão existe uma página de ajuda com este número!'
@@ -39,19 +39,19 @@ general:
 command:
   help:
     output:
-      info: Digite / jobs [cmd] para mais informações sobre um comando.
+      info: Digite /jobs [cmd] para mais informações sobre um comando.
       cmdUsage: '&2Uso: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
       title: '&e-------&e ======= &6Empregos &e======= &e-------'
-      page: '&e-----&e ====== Pagina &6[1] &eof &6[2] &e====== &e-----'
+      page: '&e-----&e ====== Página &6[1] &ede &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Ant '
-      prevPageOff: '&7----<< Ant '
-      nextPage: '&6 Prox &2>>----'
-      nextPageOff: '&7 Prox >>----'
+      prevPage: '&2----<< &6Ant. '
+      prevPageOff: '&7----<< Ant. '
+      nextPage: '&6 Próx. &2>>----'
+      nextPageOff: '&7 Próx. >>----'
       pageCount: '&2[current]/[total]'
   moneyboost:
     help:
@@ -61,9 +61,9 @@ command:
       allreset: Todo o impulso de aumento de dinheiro desativado
       jobsboostreset: O impulso de dinheiro foi desativado para %jobname%
       nothingtoreset: Nada para redefinir
-      boostalladded: Impulso de Dinheiro %boost% adicionado para todas profissões!
-      boostadded: Impulso de dinheiro&e%boost% &a adicionado para &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      boostalladded: Impulso de Ddnheiro %boost% adicionado para todas profissões!
+      boostadded: Impulso de dinheir o&e%boost% &a adicionado para &e%jobname%!
+      infostats: '&c-----> &aImpulso de dinheiro de x%boost% ativado&c <-------'
   pointboost:
     help:
       info: Aumenta o impulso de ganho de pontos para todos os jogadores
@@ -72,20 +72,20 @@ command:
       allreset: Todos os pontos impulsos foram desativados
       jobsboostreset: O impulso de pontos foi desativado para %jobname%
       nothingtoreset: Nada para redefinir
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      boostalladded: Impulso de pontos de x%boost% adicionado para todas as profissões!
+      boostadded: Impulso de pontos de &e%boost% &aadicionado para &e%jobname%!
+      infostats: '&c-----> &aImpulso de pontos de x%boost% ativado&c <-------'
   expboost:
     help:
-      info: Aumenta o bônus ganho de xp para todos os jogadores
+      info: Aumenta o bônus ganho de XP para todos os jogadores
       args: '[jobname] [rate]'
     output:
-      allreset: Todos os pontos impulsos de xp foram desativados
-      jobsboostreset: O impulso de exp foi desativado para %jobname%
+      allreset: Todos os impulsos de XP foram desativados
+      jobsboostreset: O impulso de experiência foi desativado para %jobname%
       nothingtoreset: Nada para redefinir
-      boostalladded: Impulso de Experiencia %boost% adicionado para todas as Profissões!
-      boostadded: Impulso de Experiencia &e%boost% &aadicionado para &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      boostalladded: Impulso de experiência de x%boost% adicionado para todas as profissões!
+      boostadded: Impulso dde experiência de x&e%boost% &aadicionado para &e%jobname%!
+      infostats: '&c-----> &aImpulso de experiência de x%boost% ativado&c <-------'
   itembonus:
     help:
       info: Verificar item bônus
@@ -93,7 +93,7 @@ command:
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7Do nível: %from% \n&7Até nível: %until%"
   edititembonus:
     help:
       info: Editar bônus de aumento de item
@@ -104,16 +104,16 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &eBônus por perm: %money% %points% %exp%'
-      item: ' &eBônus de Item: %money% %points% %exp%'
-      global: ' &eBônus Global: %money% %points% %exp%'
-      dynamic: ' &eDynamic bonus: %money% %points% %exp%'
-      nearspawner: ' &eSpawner bonus: %money% %points% %exp%'
-      petpay: ' &ePetPay bonus: %money% %points% %exp%'
-      area: ' &eArea bonus: %money% %points% %exp%'
-      mcmmo: ' &eMcMMO bonus: %money% %points% %exp%'
-      final: ' &eBônus Final: %money% %points% %exp%'
-      finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
+      permission: ' &eBônus por permissão: %money% %points% %exp%'
+      item: ' &eBônus de item: %money% %points% %exp%'
+      global: ' &eBônus global: %money% %points% %exp%'
+      dynamic: ' &eBônus dinâmico: %money% %points% %exp%'
+      nearspawner: ' &eBônus de spawner: %money% %points% %exp%'
+      petpay: ' &eBônus do PetPay: %money% %points% %exp%'
+      area: ' &eBônus de área: %money% %points% %exp%'
+      mcmmo: ' &eBônus do McMMO: %money% %points% %exp%'
+      final: ' &eBônus final: %money% %points% %exp%'
+      finalExplanation: ' &eNão inclui bônus/penalidade do PetPay ou de spawners perto.'
   convert:
     help:
       info: Converts the database system from one system to another. If you are currently running SQLite, this will convert it to MySQL and vice versa.
